@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>StayBalanced - Refund Calculator</title>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/app.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container" style="padding-top: 6px;">
+        <button id="add" type="button" class="btn btn-primary">
+            <span class="glyphicon glyphicon-plus"></span> Add
+        </button>
+        <button id="compute" type="button" class="btn btn-primary">Compute</button>
+    </div>
+</nav>
+<div id="rows" class="container" style="margin-top: 75px;">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <input type="text" class="form-control" name="name[]" placeholder="Name"/>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <input type="number" class="form-control" name="price[]" placeholder="Price"/>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <input type="number" class="form-control" disabled name="toPay[]"
+                       placeholder="To pay"/>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <button class="btn-remove btn btn-danger" tabindex="-1"><span class="glyphicon glyphicon-remove"></span></button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
